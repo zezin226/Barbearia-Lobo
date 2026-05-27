@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cortes clássicos e barba terapia." />
+    <title>💈 Barbearia Lobo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#" class="logo" aria-label="💈 Barbearia Lobo — página inicial"
+          >💈 Barbearia Lobo</a>
+
+         
+
+        <nav aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#lista">lista</a></li>
+            <li><a href="#cardapio">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">💈 Barbearia Lobo</h1>
+          <b class="lead">Cortes clássicos e Barba feita.</b>
+          <a class="btn" href="#cardapio">Ver serviços</a>
+        </div>
+      </section>
+
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="container">
+          <h2 id="sobre-title">Sobre nós</h2>
+          <strong
+            >A barbearia lobo é uma barbearia humilde mas muito atenciosa,
+            prometemos mudar sua vida com nossos cortes incríveis!!</strong
+          >
+        </div>
+      </section>
+      <section id="lista" class="section" aria-labelledby="lista-title">
+  <div class="container">
+    <h2 id="lista-title">lista</h2>
+
+    <div class="lista-wrapper">
+      <div class="lista-texto">
+        <p><strong><b>1.</b> corte</strong></p>
+        <p><strong><b>2.</b> barba</strong></p>
+        <p><strong><b>3.</b> corte+barba</strong></p>
+        <p><strong><b>4.</b> pigmentação</strong></p>
+        <p><strong><b>5.</b> Corte+pigmentação</strong></p>
+        <p><strong><b>6.</b> progressiva (liso ou cacheado)</strong></p>
+        <p><strong><b>7.</b> Luzes</strong></p>
+        <p><strong><b>8.</b> Descoloração</strong></p>
+      </div>
+
+      <!-- index.html (Linha 63 aproximada) -->
+<div class="lista-imagem">
+  <img
+    src="img/modelo.PNG" 
+    alt="modelo de corte de cabelo"
+    class="imagem-modelo"/>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section
+        id="cardapio"
+        class="section section--alt"  aria-labelledby="cardapio-title" >
+        <div class="container">
+          <h2 id="cardapio-title">Serviços</h2>
+          <ul class="cards" id="lista-itens" aria-live="polite">
+            <!-- Itens injetados via JS a partir de js/dados.js -->
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="section" aria-labelledby="contato-title">
+        <div class="container">
+          <h2 id="contato-title">Fale com a gente</h2>
+          <form class="form" novalidate aria-describedby="form-help">
+            <b id="form-help" class="muted"
+              >Os campos marcados com * são obrigatórios.</b
+            >
+
+            <div class="field">
+              <label for="nome">Nome *</label>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+            <p id="form-status" role="status" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>
+          © <span id="ano"></span> Barbearia Lobo. Projeto acadêmico — Curso de
+          Web Design Híbrido · Vocação.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
